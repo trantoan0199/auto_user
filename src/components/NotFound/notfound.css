@@ -1,0 +1,169 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-family: "Raleway", sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	background-color: #fff;
+}
+body a {
+	text-decoration: none;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+p {
+	margin: 0;
+}
+
+/*--error--*/
+.error {
+	/* padding: 5em 0; */
+}
+.error-top h4 {
+	font-weight: 400;
+	font-size: 2.2em;
+	color: #8cd0b4;
+	background: #fff;
+	padding: 8px 70px;
+	position: absolute;
+	top: 33.5%;
+	left: 34%;
+	font-family: "Poiret One", cursive;
+}
+.error-top h3 {
+	font-weight: 400;
+	font-size: 15em;
+	color: #00b29f;
+}
+.error-top h5 {
+	font-weight: 400;
+	font-size: 2.5em;
+	color: #00b29f;
+	font-family: "Poiret One", cursive;
+}
+.error-top p {
+	font-weight: 400;
+	font-size: 1.23em;
+	color: #555;
+}
+.e-btn {
+	margin-top: 3em;
+}
+.e-btn a {
+	background: #8cd0b4;
+	padding: 1em 1.5em;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.e-btn a:hover {
+	background: #00b29f;
+	text-decoration: none;
+}
+.error-top {
+	text-align: center;
+	position: relative;
+	padding: 4em 0;
+}
+/*--contact--*/
+
+@media (max-width: 640px) {
+	.error-top h4 {
+		font-size: 2.2em;
+		padding: 8px 40px;
+		top: 33.5%;
+		left: 22%;
+	}
+	.error-top h5 {
+		font-size: 2.3em;
+	}
+	.error {
+		padding: 4em 0;
+	}
+}
+@media (max-width: 480px) {
+	.error-top h4 {
+		font-size: 2.2em;
+		padding: 8px 57px;
+		top: 33.5%;
+		left: 9%;
+	}
+}
+@media (max-width: 414px) {
+	.error-top h4 {
+		font-size: 2em;
+		padding: 8px 17px;
+		top: 33.5%;
+		left: 17%;
+	}
+}
+
+@media (max-width: 375px) {
+	.error-top h3 {
+		font-weight: 400;
+		font-size: 12em;
+		color: #00b29f;
+	}
+	.error-top h4 {
+		font-size: 2em;
+		padding: 8px 17px;
+		top: 33.5%;
+		left: 9%;
+	}
+}
+@media (max-width: 320px) {
+	.error-top h3 {
+		font-weight: 400;
+		font-size: 9em;
+	}
+	.error-top h4 {
+		font-size: 1.5em;
+		padding: 8px 28px;
+		top: 28.5%;
+		left: 13%;
+	}
+	.error {
+		padding: 3em 0;
+	}
+	.error-top p {
+		font-size: 1em;
+		line-height: 1.7em;
+	}
+	.error-top h5 {
+		font-size: 2em;
+	}
+
+	.e-btn a {
+		padding: 0.8em 1em;
+		font-size: 1em;
+	}
+	.error-top {
+		padding: 1em 0;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+	  width: 750px;
+	}
+  }
+  @media (min-width: 992px) {
+	.container {
+	  width: 970px;
+	}
+  }
+  @media (min-width: 1200px) {
+	.container {
+	  width: 1170px;
+	}
+  }
