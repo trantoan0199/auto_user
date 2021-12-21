@@ -53,7 +53,7 @@ const Collections = () => {
         <span>Chọn từ sản phẩm cao cấp và tiết kiệm nhiều tiền</span>
       </div>
 
-      <div className="promotion-layout container">{showData(products)}</div>
+      <div className="promotion-layout" style={{ padding: 20 }}>{showData(products)}</div>
     </section>
   );
 };

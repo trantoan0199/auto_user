@@ -33,7 +33,7 @@ const routes = [
     element: <Blog />,
   },
   {
-    path: "/productdetail",
+    path: "/products/:id",
     exact: false,
     element: <ProductDetail />,
   },

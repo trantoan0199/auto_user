@@ -15,7 +15,7 @@ function Footer() {
               nothing - Tốt nhất hoặc không có gì"
             </p>
           </div>
-          <div className="col-md-4 footer-middle-w3-agileits">
+          <div className="col-md-4 footer-middle-w3-agileits" style={{ textAlign: 'left', paddingLeft: 12 }}>
             <h3>Address</h3>
             <ul>
               <li>

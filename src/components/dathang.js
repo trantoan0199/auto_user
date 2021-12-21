@@ -147,6 +147,7 @@ import {
   Typography,
   TextField,
   Button,
+  Box
 } from "@material-ui/core";
 import Icon from "@material-ui/core/Icon";
 import { makeStyles } from "@material-ui/styles";
@@ -170,11 +171,22 @@ const useStyles = makeStyles((theme) => ({
 
 function Dathang() {
   const classes = useStyles();
+
+  const [state, setState] = React.useState({})
+
+  const handleChange = (key, value) => {
+    setState({...state, [key]: value })
+  }
+
+  const handleSubmit = () => {
+    console.log(state);
+  }
+
   return (
-    <Container>
+    <Container style={{ marginTop: 40 }}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6} md={6}>
-          <Card>
+          <Card style={{ padding: 12 }}>
             <img
               src="https://img.tinbanxe.vn/images/Lamborghini/Lamborghini%20Huracan%20Evo/ANHDAIDIEN-Lamborghini-Huracan_EVO-.png"
               alt="autoshop"
@@ -188,69 +200,82 @@ function Dathang() {
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={6}>
-          <Card>
+          <Card style={{ padding: 12 }}>
             <form noValidate autoComplete="off" className={classes.bg}>
               <TextField
                 className={classes.input}
                 label="Nhập họ và tên của Anh/Chị"
                 variant="outlined"
+                onChange={({ target }) => handleChange('name', target.value )}
               />
               <TextField
                 label="CMDD/CCCD"
                 variant="outlined"
                 type="text"
                 className={classes.input}
+                onChange={({ target }) => handleChange('cmdd', target.value )}
               />
               <TextField
                 label="Số điện thoại"
                 variant="outlined"
                 className={classes.input}
+                onChange={({ target }) => handleChange('phoneNumber', target.value )}
               />
               <TextField
                 label="Mail"
                 variant="outlined"
                 type="text"
                 className={classes.input}
+                onChange={({ target }) => handleChange('email', target.value )}
               />
               <TextField
                 label="Số nhà/Tên đường"
                 variant="outlined"
                 className={classes.input}
+                onChange={({ target }) => handleChange('address', target.value )}
               />
               <TextField
                 label="Xã/Phường"
                 variant="outlined"
                 type="text"
                 className={classes.input}
+                onChange={({ target }) => handleChange('address2', target.value )}
               />
               <TextField
                 label="Quận/Huyện"
                 variant="outlined"
                 type="text"
                 className={classes.input}
+                onChange={({ target }) => handleChange('address3', target.value )}
               />
               <TextField
                 label="Tỉnh/Thành phố"
                 variant="outlined"
                 className={classes.input}
+                onChange={({ target }) => handleChange('address4', target.value )}
               />
               <TextField
                 className={classes.input}
                 id="datetime-local"
+                variant="outlined"
                 label="Ngày giờ nhận xe"
                 type="datetime-local"
                 defaultValue="2017-05-24T10:30"
+                onChange={({ target }) => handleChange('date', target.value )}
               />
             </form>
-            <Button
-              type="submit"
-              variant="contained"
-              color="primary"
-              className={classes.button}
-              endIcon={<Icon>send</Icon>}
-            >
-              Send
-            </Button>
+            <Box display="flex" justifyContent="center" mt={3}>
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                className={classes.button}
+                endIcon={<Icon>send</Icon>}
+                onClick={handleSubmit}
+              >
+                Send
+              </Button>
+            </Box>
           </Card>
         </Grid>
       </Grid>

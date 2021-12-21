@@ -21,6 +21,9 @@ import {
   NearMeTwoTone,
   ShoppingCartOutlined,
 } from "@material-ui/icons";
+import { useParams } from "react-router";
+import axios from "axios";
+import { URL_API } from "../../config";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -116,6 +119,19 @@ export default function ProductDetail() {
   const classes = useStyles();
   const [checked, setChecked] = React.useState(false);
 
+  const { id } = useParams()
+
+  const [product, setProduct] = React.useState({})
+
+  const fetchData = async () => {
+    const { data } =  await axios.get(`${URL_API}/productList/${id}`)
+    setProduct(data)
+  }
+
+  React.useEffect(() => {
+    fetchData()
+  }, [id])
+
   const handleChange = () => {
     setChecked((prev) => !prev);
   };
@@ -148,7 +164,7 @@ export default function ProductDetail() {
                   color="textSecondary"
                   style={{ fontSize: 20 }}
                 >
-                  Giá cả: 3.000.000.000 đ
+                  {product.price}
                 </Typography>
               </Grid>
               <Grid

@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core";
 import { AttachMoneyTwoTone, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
+import Products from "../../Products";
 
 const products = [
   {
@@ -59,60 +60,7 @@ const products = [
 function ProductHome() {
   return (
     <Box>
-      <Container>
-        <Typography
-          variant="h2"
-          children="Sản phẩm mới"
-          style={{ fontWeight: 700 }}
-        />
-      </Container>
-      <Container style={{ margin: "32px 0" }}>
-        <Grid
-          container
-          rowSpacing={5}
-          columnSpacing={{ xs: 5, sm: 2, md: 3 }}
-          spacing={3}
-        >
-          {products.map((product, index) => {
-            return (
-              <Grid item xs={12} sm={6} md={4} key={index}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardMedia
-                    component="img"
-                    height="250"
-                    image={product.img}
-                    alt={product.name}
-                  />
-                  <CardContent>
-                    <Typography
-                      variant="h4"
-                      component="h4"
-                      color="red"
-                      children={product.name}
-                      align="left"
-                    />
-                    <Typography variant="body1" color="text.secondary">
-                      <IconButton>
-                        <AttachMoneyTwoTone />
-                        {product.price}
-                      </IconButton>
-                    </Typography>
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      size="medium"
-                      fullWidth
-                      startIcon={<ShoppingCartOutlined />}
-                      href="/"
-                      children="ADD CART"
-                    />
-                  </CardContent>
-                </Card>
-              </Grid>
-            );
-          })}
-        </Grid>
-      </Container>
+      <Products limit={10} showFilter={false} />
     </Box>
   );
 }
