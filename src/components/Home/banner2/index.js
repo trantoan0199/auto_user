@@ -26,7 +26,7 @@ function Banner2() {
               <div className="grid">
                 <figure className="effect-apollo">
                   <img
-                    src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/261371314_7232313756794182_1544075082386251634_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=7zTMJs0JsaAAX9CRnsv&_nc_ht=scontent.fdad1-3.fna&oh=00_AT9PVV1ws_-IvH5VjaxZXp9gW4I95hxHDwImONkfD132ig&oe=61C32D65"
+                    src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/264811519_7294925400533017_8438320203176880880_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=aFw8YnsFII0AX9ufTIW&_nc_ht=scontent.fdad2-1.fna&oh=00_AT8XJY1eJ6OdvW1AMFMGiPNicDd3qP454KliqrwCqG5X6Q&oe=61C8D776"
                     alt=" "
                   />
                 </figure>
@@ -35,7 +35,7 @@ function Banner2() {
             <div className="grid">
               <figure className="effect-apollo">
                 <img
-                  src="https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/267503576_7336537826371774_8001420137335356553_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=LwoyVOW13nEAX_Iqi9p&tn=kMK1nCzIq2fSIHzK&_nc_ht=scontent.fdad1-2.fna&oh=00_AT-AwCnV0dVi6ekv9KReYpH-petruuxqBkpTlFh2LDtJtw&oe=61C2E0BD      "
+                  src="https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/264465046_7294925307199693_4040444029337309308_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=rvEhkhsZiKkAX84WpQX&_nc_oc=AQmuVHHhn7fmSPlMeQbOPmUBSCGai_POiM1GjJ56nJvAozagXVG-cMOgo0gIjzkg6TNeeRMofXNKeF6TxbfXirCb&_nc_ht=scontent.fdad1-1.fna&oh=00_AT9_nU048fEJ08TYcVV97R0ebLLTtCSLwN7_6CZME6GLLA&oe=61C7F808"
                   alt=" "
                 />
               </figure>
@@ -46,7 +46,7 @@ function Banner2() {
               <div className="grid">
                 <figure className="effect-apollo">
                   <img
-                    src="https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/264465046_7294925307199693_4040444029337309308_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=kWsdRteexJ8AX9UgdEV&_nc_oc=AQm8YegnkWXq8Eb5Yvb07LTAKvWOJCgEz2_Mnl1cLPUjBjqOstBeiOeJfTAJg3gB6oeiB7gtVBuw7g00HFk6nC6-&_nc_ht=scontent.fdad1-1.fna&oh=00_AT9m2qN0QCmqr0AWIOMFGr_geo9zPLL3B2fY_XQzCp-D8Q&oe=61C20948"
+                    src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/262603596_7257424654283092_1575971093531688030_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=3-OaXTGbprQAX9sHWUP&_nc_ht=scontent.fdad2-1.fna&oh=00_AT-Y9DXabuvn_XCPn3GTfwXZETkqnWvr8cb2zYNQEEe5og&oe=61C7DAB3"
                     alt=" "
                   />
                 </figure>

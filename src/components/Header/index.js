@@ -30,10 +30,10 @@ const menus = [
     dataHover: "Products",
   },
   {
-    name: "Blog",
-    to: "/blog",
+    name: "News",
+    to: "/news",
     exact: false,
-    dataHover: "Blog",
+    dataHover: "News",
   },
   {
     name: "Contact",
@@ -41,64 +41,7 @@ const menus = [
     exact: false,
     dataHover: "Contact",
   },
-  {
-    name: "ProductDetail",
-    to: "/productdetail",
-    exact: false,
-    dataHover: "ProductDetail",
-  },
-  {
-    name: "Đặt hàng",
-    to: "/dathang",
-    exact: false,
-    dataHover: "Đặt hàng",
-  },
-  // {
-  //   name: "NotFound",
-  //   to: "/notFound",
-  //   exact: false,
-  //   dataHover: "NotFound",
-  // },
 ];
-
-// const MenuLink = ({ label, to, actionOnlyWhenExact, dataHover }) => {
-//   return (
-//     <Routes>
-//       <Route
-//         path={to}
-//         exact={actionOnlyWhenExact}
-//         children={({ match }) => {
-//           var action = match ? "action" : "";
-//           return (
-//             <li className={action}>
-//               <Link to={to} data-hover={dataHover}>
-//                 {label}
-//               </Link>
-//             </li>
-//           );
-//         }}
-//       />
-//     </Routes>
-//   );
-// };
-
-// const showMenus = (menus) => {
-//   var result = null;
-//   if (menus.length > 0) {
-//     result = menus.map((menu, index) => {
-//       return (
-//         <MenuLink
-//           key={index}
-//           to={menu.to}
-//           actionOnlyWhenExact={menu.exact}
-//           dataHover={menu.dataHover}
-//           label={menu.name}
-//         />
-//       );
-//     });
-//   }
-//   return result;
-// };
 
 const showMenus = (menus) => {
   var result = null;
@@ -166,27 +109,7 @@ function Header() {
                 className="navbar-collapse navbar-right collapse hover-effect"
               >
                 <ul className="nav navbar-nav">
-                  {/* <li class="active">
-                    <a href="/" data-hover="HOME">
-                      HOME
-                    </a>
-                  </li> */}
                   {showMenus(menus)}
-                  {/* <li>
-                    <Link to="/" data-hover="PRODUCTS">
-                      PRODUCTS
-                    </Link>
-                  </li>
-                  <li>
-                    <a href="/" data-hover="BLOG">
-                      BLOG
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/" data-hover="CONTACT">
-                      CONTACT
-                    </a>
-                  </li> */}
                 </ul>
               </div>
             </nav>

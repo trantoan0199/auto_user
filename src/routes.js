@@ -1,6 +1,6 @@
 import Home from "./components/Home/Home";
 import Products from "./components/Products";
-import Blog from "./components/Blog";
+import News from "./components/News";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
@@ -18,9 +18,9 @@ const routes = [
     element: <Products />,
   },
   {
-    path: "/blog",
+    path: "/news",
     exact: false,
-    element: <Blog />,
+    element: <News />,
   },
   {
     path: "/contact",
@@ -28,17 +28,12 @@ const routes = [
     element: <Contact />,
   },
   {
-    path: "/blog",
-    exact: false,
-    element: <Blog />,
-  },
-  {
     path: "/products/:id",
     exact: false,
     element: <ProductDetail />,
   },
   {
-    path: "/dathang",
+    path: "/order/:id",
     exact: false,
     element: <Dathang />,
   },
