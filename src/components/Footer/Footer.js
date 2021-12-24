@@ -24,7 +24,7 @@ function Footer() {
                   aria-hidden="true"
                 ></span>
               </li>
-              <li>345 Setwant natrer,Washington. United States</li>
+              <li>362 Tôn Đức Thắng, Liên Chiểu, Đà Nẵng</li>
             </ul>
             <ul className="gap">
               <li>
@@ -33,7 +33,7 @@ function Footer() {
                   aria-hidden="true"
                 ></span>
               </li>
-              <li>+18044268943</li>
+              <li>0967830046</li>
             </ul>
             <ul>
               <li>
@@ -43,7 +43,7 @@ function Footer() {
                 ></span>
               </li>
               <li>
-                <a href="mailto:info@example.com">example@gmail.com</a>
+                <a href="mailto:trantrungtoan9x@gmail.com">trantrungtoan9x@gmail.com</a>
               </li>
             </ul>
           </div>

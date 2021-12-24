@@ -67,7 +67,7 @@ function News() {
                               textDecoration: "underline",
                             }}
                           >
-                            {e.news}
+                            {e.title}
                           </Typography>
                           <Typography
                             variant="body1"

@@ -26,7 +26,7 @@ import {
 import { useParams } from "react-router";
 import axios from "axios";
 import { URL_API } from "../../config";
-import { useNavigate } from 'react-router'
+import { useNavigate } from "react-router";
 import Products from "../Products";
 
 const useStyles = makeStyles((theme) => ({
@@ -117,7 +117,7 @@ export default function ProductDetail() {
                   Hộp số:
                 </Typography>
                 <Typography variant="body1" style={{ color: "#bab4b4" }}>
-                  Giá cả: {product.hopSo}
+                  {product.hopSo}
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6}>
@@ -125,7 +125,7 @@ export default function ProductDetail() {
                   Công suất tối đa(Hp/rpm):
                 </Typography>
                 <Typography variant="body1" style={{ color: "#bab4b4" }}>
-                  Giá cả: {product.congSuat}
+                  {product.congSuat}
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6}>
@@ -133,7 +133,7 @@ export default function ProductDetail() {
                   Mức tiêu thụ nhiên liệu(lít/100km):
                 </Typography>
                 <Typography variant="body1" style={{ color: "#bab4b4" }}>
-                  Giá cả: {product.nhienLieu}
+                  {product.nhienLieu}
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6}>
@@ -141,7 +141,7 @@ export default function ProductDetail() {
                   Số chỗ ngồi:
                 </Typography>
                 <Typography variant="body1" style={{ color: "#bab4b4" }}>
-                  Giá cả: {product.soChoNgoi}
+                  {product.soChoNgoi}
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6}>
@@ -149,7 +149,7 @@ export default function ProductDetail() {
                   Hệ thống giải trí:
                 </Typography>
                 <Typography variant="body1" style={{ color: "#bab4b4" }}>
-                  Giá cả: {product.giaTri}
+                  {product.giaiTri}
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6}>
@@ -157,7 +157,7 @@ export default function ProductDetail() {
                   Loại động cơ:
                 </Typography>
                 <Typography variant="body1" style={{ color: "#bab4b4" }}>
-                  Giá cả: {product.loaiDongCo}
+                  {product.loaiDongCo}
                 </Typography>
               </Grid>
             </Grid>

@@ -5,6 +5,8 @@ import {
   InputAdornment,
   Select,
   MenuItem,
+  Typography,
+  Button,
 } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import { withStyles } from "@material-ui/core/styles";
@@ -97,58 +99,57 @@ export default function Filter() {
           ),
         }}
       />
-      <Box>
-        {/* <Select
-          variant="outlined"
-          margin="dense"
-          style={{ marginRight: 12, width: 100 }}
-          value={sortPrice}
-          onChange={handleChange}
-        >
-          {prices.map((item) => (
-            <MenuItem value={item.value}>{item.value}</MenuItem>
-          ))}
-        </Select>
-        <Select
-          variant="outlined"
-          margin="dense"
-          value={type}
-          onChange={handleChange}
-        >
-          {currencies.map((item) => (
-            <MenuItem value={item.value}>{item.value}</MenuItem>
-          ))}
-        </Select> */}
+      <Box style={{ display: "flex" }}>
+        <Typography color="primary" style={{ fontSize: 15, margin: "0 10px" }}>
+          Hãng xe
+        </Typography>
         <FormControl>
-          <InputLabel htmlFor="demo-customized-select-native">Age</InputLabel>
+          <InputLabel htmlFor="demo-customized-select-native">
+            Hãng xe
+          </InputLabel>
           <NativeSelect
             id="demo-customized-select-native"
             value={age}
             label="Age"
             onChange={handleChange}
+            style={{ height: 20 }}
             input={<BootstrapInput />}
           >
             <option aria-label="None" value="" />
-            <option value={10}>Ten</option>
-            <option value={20}>Twenty</option>
-            <option value={30}>Thirty</option>
+            <option value={10}>Vinfast</option>
+            <option value={20}>Audi</option>
+            <option value={30}>Mercedes</option>
+            <option value={30}>Toyota</option>
+            <option value={30}>Lamborghini</option>
           </NativeSelect>
         </FormControl>
+        <Typography color="primary" style={{ fontSize: 15, margin: "0 10px" }}>
+          Giá xe
+        </Typography>
         <FormControl>
-          <InputLabel htmlFor="demo-customized-select-native">Age</InputLabel>
+          <InputLabel htmlFor="demo-customized-select-native">
+            Giá xe
+          </InputLabel>
           <NativeSelect
             id="demo-customized-select-native"
             value={age}
             label="Age"
             onChange={handleChange}
+            style={{ height: 20 }}
             input={<BootstrapInput />}
           >
             <option aria-label="None" value="" />
-            <option value={10}>Ten</option>
-            <option value={20}>Twenty</option>
-            <option value={30}>Thirty</option>
+            <option value={10}>Tăng dần</option>
+            <option value={20}>Giảm dần</option>
           </NativeSelect>
         </FormControl>
+        <Button
+          variant="outlined"
+          color="secondary"
+          style={{ borderRadius: "30%", height: 30, marginLeft: 10 }}
+        >
+          Áp Dụng
+        </Button>
       </Box>
     </Box>
   );

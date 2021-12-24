@@ -24,7 +24,7 @@ function Contact() {
           ></iframe>
         </Grid>
         <Grid item xs={4} sm={6} md={4}>
-          <form>
+          <form style={{ display: "block", lineHeight: 3, maxWidth: "100%" }}>
             <div class="mb-3">
               <label class="form-label">Họ và Tên</label>
               <input type="text" class="form-control" />
