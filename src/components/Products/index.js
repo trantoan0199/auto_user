@@ -13,7 +13,7 @@ function Products({ showFilter = true, limit = 100 }) {
     const { data } = await axios.get(
       `${URL_API}/products?page=1&limit=${limit}`
     );
-    setData(data);
+    setData(data.data);
   };
 
   React.useEffect(() => {
