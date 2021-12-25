@@ -1,4 +1,5 @@
 {
+  "homepage": "https://trantoan0199.github.io/auto_user",
   "name": "project",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,7 @@
     "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
     "core-js-compat": "^3.4.7",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.1.0",
@@ -19,10 +21,12 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "SET PORT=500 && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
