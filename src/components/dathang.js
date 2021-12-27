@@ -64,7 +64,7 @@ function Dathang() {
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6} md={6}>
           <Card style={{ padding: 12, height: 400 }}>
-            <img src={product.img} alt={product.name} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
+            <img src={product.img} alt={product.name} style={{ height: '80%', width: '100%', objectFit: 'cover' }} />
             <Typography
               variant="h3"
               children={product.name}
@@ -89,8 +89,8 @@ function Dathang() {
                 variant="outlined"
                 type="text"
                 className={classes.input}
-                value={state.cmdd || ''}
-                onChange={({ target }) => handleChange("cmdd", target.value)}
+                value={state.cmnd || ''}
+                onChange={({ target }) => handleChange("cmnd", target.value)}
               />
               <TextField
                 label="Số điện thoại"
@@ -121,9 +121,9 @@ function Dathang() {
                 variant="outlined"
                 type="text"
                 className={classes.input}
-                value={state.address2 || ''}
+                value={state.xaPhuong || ''}
                 onChange={({ target }) =>
-                  handleChange("address2", target.value)
+                  handleChange("xaPhuong", target.value)
                 }
               />
               <TextField
@@ -131,18 +131,18 @@ function Dathang() {
                 variant="outlined"
                 type="text"
                 className={classes.input}
-                value={state.address3 || ''}
+                value={state.quanHuyen || ''}
                 onChange={({ target }) =>
-                  handleChange("address3", target.value)
+                  handleChange("quanHuyen", target.value)
                 }
               />
               <TextField
                 label="Tỉnh/Thành phố"
                 variant="outlined"
                 className={classes.input}
-                value={state.address4 || ''}
+                value={state.city || ''}
                 onChange={({ target }) =>
-                  handleChange("address4", target.value)
+                  handleChange("city", target.value)
                 }
               />
               <TextField

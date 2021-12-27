@@ -3,8 +3,6 @@ import {
   Box,
   TextField,
   InputAdornment,
-  Select,
-  MenuItem,
   Typography,
   Button,
 } from "@material-ui/core";
@@ -14,34 +12,6 @@ import InputLabel from "@material-ui/core/InputLabel";
 import NativeSelect from "@material-ui/core/NativeSelect";
 import InputBase from "@material-ui/core/InputBase";
 import FormControl from "@material-ui/core/FormControl";
-const currencies = [
-  {
-    value: "Lamborghini",
-  },
-  {
-    value: "Vinfast",
-  },
-  {
-    value: "Merceder",
-  },
-  {
-    value: "Toyota",
-  },
-  {
-    value: "Audi",
-  },
-];
-
-const prices = [
-  {
-    value: "asc",
-    name: "tăng dần",
-  },
-  {
-    value: "desc",
-    name: "giảm dần",
-  },
-];
 
 const BootstrapInput = withStyles((theme) => ({
   root: {
@@ -78,19 +48,28 @@ const BootstrapInput = withStyles((theme) => ({
 }))(InputBase);
 
 export default function Filter() {
-  const [sortPrice, setSortPrice] = React.useState("desc");
-  const [type, setType] = React.useState("Toyota");
-
+  const [brand, setBrand] = React.useState("");
   const [age, setAge] = React.useState("");
-  const handleChange = (event) => {
+  const [search, setSearch] = React.useState("");
+  const handleChangeAge = (event) => {
     setAge(event.target.value);
+  };
+  const handleChangeBrand = (event) => {
+    setBrand(event.target.value);
+  };
+
+  const handleChangeSearch = (event) => {
+    setSearch(event.target.value);
   };
   return (
     <Box display="flex" justifyContent="space-between" mb={2}>
       <TextField
         size="small"
         variant="outlined"
+        value={search}
+        name="search"
         label="Search"
+        onChange={handleChangeSearch}
         InputProps={{
           endAdornment: (
             <InputAdornment position="end">
@@ -109,9 +88,9 @@ export default function Filter() {
           </InputLabel>
           <NativeSelect
             id="demo-customized-select-native"
-            value={age}
-            label="Age"
-            onChange={handleChange}
+            value={brand}
+            label="Hãng xe"
+            onChange={handleChangeBrand}
             style={{ height: 20 }}
             input={<BootstrapInput />}
           >
@@ -119,8 +98,8 @@ export default function Filter() {
             <option value={10}>Vinfast</option>
             <option value={20}>Audi</option>
             <option value={30}>Mercedes</option>
-            <option value={30}>Toyota</option>
-            <option value={30}>Lamborghini</option>
+            <option value={40}>Toyota</option>
+            <option value={50}>Lamborghini</option>
           </NativeSelect>
         </FormControl>
         <Typography color="primary" style={{ fontSize: 15, margin: "0 10px" }}>
@@ -134,7 +113,7 @@ export default function Filter() {
             id="demo-customized-select-native"
             value={age}
             label="Age"
-            onChange={handleChange}
+            onChange={handleChangeAge}
             style={{ height: 20 }}
             input={<BootstrapInput />}
           >

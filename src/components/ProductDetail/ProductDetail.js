@@ -4,23 +4,11 @@ import {
   Grid,
   Container,
   Button,
-  Card,
-  CardMedia,
-  CardContent,
-  IconButton,
-  FormControlLabel,
-  Switch,
-  Collapse,
-  Box,
 } from "@material-ui/core";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import ButtonBase from "@material-ui/core/ButtonBase";
 import {
-  AttachMoneyTwoTone,
-  CancelOutlined,
   NearMeTwoTone,
-  ShoppingCartOutlined,
   MonetizationOnOutlined,
 } from "@material-ui/icons";
 import { useParams } from "react-router";
